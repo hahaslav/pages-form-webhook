@@ -18,13 +18,5 @@ document.getElementById('discordForm').addEventListener('submit', function(e) {
         },
         body: JSON.stringify(payload),
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-        alert('Message sent successfully!');
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        alert('Error sending message');
-    });
+    .then(response => response.json());
 });
